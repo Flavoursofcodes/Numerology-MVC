@@ -1,0 +1,505 @@
+{
+  "hidden-potential-blindspot": {
+    "English": {
+      "1": "You are probably not aware that you are a straight-forward, charismatic & influential leader who demonstrates good interpersonal skills. Often innovative and able to work independently, relies on your emotions for decision-making. ",
+      "2": "You are probably not aware that you  are a dominant & expressive communicator with good negotiation skills. You are very much Intune to your emotions, Soft-hearted to most situations, and a sensitive person. You possess a keen sense of taste.",
+      "3": "You are probably not aware that you are known to be on-the-ball, pays attention to details, always emotional, Fast & aggressive in your tasks. Well-liked to be a sociable and sporty person. Able to provide a good listening ear when needed. ",
+      "4": "You are probably not aware that you are a meticulous strategist, who has good planning and administrative skills, likely to invest in education, system and structure. You are known to be a law abiding person, forward looking and always base your opinions on facts and logic.",
+      "5": "You are probably not aware that you are a principled and grounded architect, developer and builder. Recognised as a filial child and loyal friend. Gives others an impression of steadiness, with a good sense of direction.",
+      "6": "You are probably not aware that you demonstrate a strong sense of righteousness and boldness. Viewed as a protector of family, finance & assets. You are naturally charismatic, influential and with good interpersonal skills.",
+      "7": "You are probably not aware that you are a lucky and mysterious person, who makes the best out of situations and people. Egoistic, enterprising, good at multitasking, troubleshooting and solving problems. You have many mentors to guide you along.",
+      "8": "You are probably not aware that you  are a responsible, disciplined workaholic with a good sense of grasping ideas, concepts and organising them all together. A good listener who is appreciative of music. Usually guided by emotions when on task.",
+      "9": "You are probably not aware that you  are visual, creative, very meticulous and self-centred when it comes to business or work. A law-abiding and conscientious person. Often spends on needs rather than wants. You do not believe in reinventing the wheels, however, you are good at repackaging to suit the needs of the situations."
+    },
+    "Malay": {
+      "1": "Anda akan kelihatan degil, mementingkan diri sendiri, yakin bahawa anda unggul dan terlalu fokus pada matlamat peribadi anda. Anda mempunyai keperibadian yang terlalu berdikari dan oleh itu tidak berminat dalam percintaan dan kadangkala anda mengabaikan perasaan orang lain kerana anda hanya memetingkan diri sendiri.",
+      "2": "Anda kadangkala membuat terlalu banyak permintaan atau menetapkan jangkaan yang terlalu tinggi menyebabkan orang lain merasa terbeban atau tertekan. Apabila seseorang tidak lagi dianggap berharga, anda mempunyai kecenderungan untuk meninggalkan orang itu dan mencari orang lain yang bermanfaat. Dengan demikian  anda boleh dengan mudah menyinggung perasaan orang lain dan membina banyak musuh di sekeliling anda.",
+      "3": "Anda naif dan idealis, berfikir bahawa tidak ada yang akan menyakiti anda. Anda memilih untuk mengabaikan bahaya dunia. Walau bagaimana pun anda akan merasa terbeban dan hilang keyakinan diri apabila akhirnya menghadapi kenyataan yang keras.",
+      "4": "Anda akan selalu merasakan perasaan yang tidak selamat setiap kali emosi anda terganggu. Akan cenderung berlebihan untuk mencari keselamatan di sesuatu area dalam kehidupan seperti kareer.  Bila bertemu dengan sesuatu, anda akan berpaut dan menumpukan diri dalam perkara itu.",
+      "5": "Seseorang yang bersifat berkeinginan kuat dan sangat berterusan. Tetapi anda harus belajar untuk berehat dan jangan berkelam kabut dalam sesuatu hal yang remeh. Jika belajar untuk tenang dan fleksibel bila berhadapan dengan masalah melibatkan prinsip, anda akan akhirnya menang dengan mendapat penghormatan dari orang sekeliling.",
+      "6": "Anda adalah seseorang yang jelas dan mengira bila melibatkan kewangan, memberi orang disekeliling persepsi bahawa anda seorang yang kedekut. Suka bertanggungjawab dalam perkara-perkara seharian tetapi harus berwaspada untuk jangan berlebihan kerana orang lain tidak semestinya hargai kesungguhan anda.",
+      "7": "Anda lebih cenderung digemari oleh pegawai atasan dari antara rakan sekerja yang berpangkat sama.  Akan tetapi anda akan meninggalkan pekerjaan yang ada untuk persaing selepas arkib atau belajar sesuatu yang anda mahukan. Seseorang yang sanggup mengunakan orang lain untuk memenuhi cita-cita sendiri.",
+      "8": "Anda harus benar-benar jujur untuk mencapai kestabilan, keselesaan dan kebahgiaan. Tidak jujur akan memberi kelebihan seketika akan tetapi menyembunyi sesuatu yang positif akan memberi anda serangan balik yang penuh dengan tekanan.",
+      "9": "Anda akan dapat banyak peluang dalam hidup. Akan tetapi tidak boleh tamak dan hanya memikirkan peluang seterusnya akan menjadi lebih baik. Anda akan kehilangan peluang yang terbaik yang ditawarkan."
+    },
+    "Chinese":{
+      "1": "你会显得固执、个人利己主义、太专注于个人的目标、缺乏浪漫情趣，深信自己是特别优秀的，只是过于独立的个性，有时会因为太坚持自我而忽略了别人的感受。",
+      "2": "你有时会要求太多而造成别人的负担，甚至惹人生厌，当没有利用价值时，立即掉头离去，寻找下一个可以依赖的对象，因为这样而容易得罪人，无疑的会树立不少敌人。",
+      "3": "你有点天真的感觉，经常认为没有人会伤害自己，就像未识世途险恶，一旦要面对残酷现实，就会变得不知所措，甚至丧失信心。",
+      "4": "你总是缺乏安全感，如果在感情上得不到安全感时，就会到处寻找可以稳定自己内心的浮萍，如事业，－旦找到了，就会紧抓不放，全心投入。",
+      "5": "不妥协和顽固不化是你的特质，学习放松和不计较小事，这是必须要学的。对于涉及原则的问题，如果能设法保持冷静，并学会更灵活些，最终将会赢得周遭所有人的尊重。",
+      "6": "你往往会对关乎自身一切方面的财政会计都非常清楚，精打细算，给人感觉吝啬。喜欢掌管一切，但别热心过头，超出你的合理范围而多付出，未必会得到他人感激。",
+      "7": "你往往会比同阶层的人更加受到雇主赏识及招徕。也因为得到一技之长后会想要离职与雇主展开竞争。善于利用他人来实现你的欲望。",
+      "8": "你应该要彻头彻尾的诚实，才能获得平稳、安逸、真正属于自己的幸福。可能会因为一时的不诚实而获得相当多的好处，但是冥冥之中会有很多不可思议的事情让你头痛。",
+      "9": "你的机会特别多，也正因为如此，为了不想错过而显得比较贪心，必须要学会专一，不然到头来会两头空。"
+    }
+  },
+  "hidden-potential-intuition": {
+    "English": {
+      "1": "You are a straight-forward, charismatic & influential leader who demonstrates good interpersonal skills. Often innovative and able to work independently, relies on your emotions for decision-making. ",
+      "2": "You are a dominant & expressive communicator with good negotiation skills. You are very much Intune to your emotions, Soft-hearted to most situations, and a sensitive person. You possess a keen sense of taste.",
+      "3": "You are known to be on-the-ball, pays attention to details, always emotional, Fast & aggressive in your tasks. Well-liked to be a sociable and sporty person. Able to provide a good listening ear when needed. ",
+      "4": "You are a meticulous strategist, who has good planning and administrative skills, likely to invest in education, system and infra-structure for people to follow. You are known to be a law abiding person, forward looking and always base your opinions on facts and logic.",
+      "5": "You are a principled and grounded architect, developer and builder. Recognised as a filial child and loyal friend. Gives others an impression of steadiness, with a good sense of direction.",
+      "6": "You demonstrate a strong sense of righteousness and boldness. Viewed as a protector of family, finance & assets. You are naturally charismatic, influential and with good interpersonal skills.",
+      "7": "You are a lucky and mysterious person, who makes the best out of situations and people. Egoistic, enterprising, good at multitasking, troubleshooting and solving problems. You have many mentors to guide you along.",
+      "8": "You are a responsible, disciplined workaholic with a good sense of grasping ideas, concepts and organising them all together. A good listener who is appreciative of music. Usually guided by emotions when on task.",
+      "9": "You are visual, creative, very meticulous and self-centred when it comes to business or work. A law-abiding and conscientious person. Often spends on needs rather than wants. You do not believe in reinventing the wheels, however,you are good at repackaging to suit the needs of the situations."
+    },
+    "Malay": {
+      "1": "Anda adalah seseorang yang berterus terang, berkarisma dan pemimpin berpengaruh yang menunjukkan kemahiran interpersonal yang baik. Selalunya inovatif dan boleh bekerja secara bersendirian dengan hanya bergantung pada emosi untuk membuat keputusan.",
+      "2": "Anda adalah seseorang yang dominan dan komunikator yang berekspresif dengan kemahiran rundingan yang baik, selari dengan emosi, lembut hati dalam kebanyakan keadaan, dan seorang yang sensitive, mempunyai deria rasa yang mendalam.",
+      "3": "Anda dikenali sebagai seseorang yang cerdas, peka dan berwaspada. Memberi perhatian secara terperinci, beremosi, pantas dan agresif dalam tugas. Disukai oleh orang sekeliling sebagai seseorang yang suka bergaul dan bersukan.",
+      "4": "Anda adalah seseorang ahli strategi yang teliti, kemahiran merancang dan pentadbiran yang baik. Kemunginan boleh merlabur pada pendidikan, sistem dan infrastruktur untuk diikuti oleh orang. Seseorang yang mematuhi undang-undang, memandang ke hadapan dan sentiasa mendasarkan pendapat anda pada fakta dan logik.",
+      "5": "Anda adalah arkitek, pemaju dan pembina yang berprinsip dan berpijak pada bumi yang nyata. Dikenali sebagai anak yang berbakti dan rakan setia. Memberi kesan stabil pada orang lain, dengan pengarahan yang baik.",
+      "6": "Anda menunjukkan rasa kebenaran dan keberanian yang kuat. Dilihat sebagai pelindung keluarga, kewangan & aset. Anda secara semula jadi berkarisma, berpengaruh dan mempunyai kemahiran interpersonal yang baik.",
+      "7": "Anda adalah seseorang yang bernasib baik dan misteri, membuat yang terbaik dari situasi dan orang. Mempunyai egoistik, giat, pandai meniaga, menjalankan tugas, menyelesaikan masalah. Anda mempunyai banyak mentor untuk membimbing anda.",
+      "8": "Anda adalah seorang pekerja yang bertanggungjawab dan berdisiplin dengan deria rasa yang baik untuk memahami idea, konsep dan menyusun semuanya. Pendengar yang baik yang menghargai muzik. Biasanya dipandu oleh emosi ketika bertugas.",
+      "9": "Anda visual, kreatif, sangat teliti dan mementingkan diri sendiri ketika dalam perniagaan atau pekerjaan. Orang yang mematuhi undang-undang dan taat. Selalunya membelanjakan untuk keperluan dan bukannya kehendak. Anda tidak percaya mencipta semula yang sudah ada. Bagaimanapun, anda pandai mengemas semula agar sesuai dengan keperluan situasi."
+    },
+    "Chinese":{
+      "1": "你是一位直率、有魅力且有影响力的领导者，能展现出良好的交际能力。具有创新精神并且能够独立工作，进行决策时会被情绪所牵引",
+      "2": "你是一个很支配和表达能力强的沟通者，具有良好的谈判技巧。情绪化和非常敏感，但大致上是的心肠柔软的人，俱有敏锐的味觉",
+      "3": "众所周知，你是个注重细节，但情绪化的人，在任务中采取了快速且积极进取的态度，善于交际和运动，在需要时，愿意聆听对方的苦恼",
+      "4": "你是一个缜密的战略家，具有良好的规划和管理能力，喜欢投资于教育、系统和基础设施，让大家效仿。众所周知，你是个守法的人，具有前瞻性，给与的意见都建立于事实和逻辑上",
+      "5": "你是一个有原则和扎实的建筑师、开发者和建造者。被公认为孝顺的孩子和忠诚的朋友。给人稳重的印象，具有良好的方向感",
+      "6": "你有强烈的正义感和勇气。被视为家庭、财务和资产的保护者。天生具有超凡魅力、影响力和良好的交际能力",
+      "7": "你是一个非常幸运且带有神秘感的人，善于利用各种资源和环境的人。自负，进取，擅长，能同一时间处理多项事务，故障排除和解决问题。会吸引许多贵人的指引",
+      "8": "你是个负责任感、有纪律的工作狂，善于把想法和概念组织在一起。喜欢欣赏音乐，通常在执行任务时会受到情绪的牵引",
+      "9": "在业务或工作方面，你具有良好的观察能力、有创造力和非常细致但自我为中心。是个遵纪守法的人。经常花费在 “需要”而不是“想要”上。擅长于重新组装新的产品概念"
+    }
+  },
+  "1NLP": {
+    "1": "Visual",
+    "2": "Auditory",
+    "3": "Kinaesthetic",
+    "4": "Olfactory",
+    "5": "Gustatory",
+    "6": "Visual",
+    "7": "Auditory",
+    "8": "Kinaesthetic",
+    "9": "Olfactory"
+  },
+  "2NLP": {
+    "1": "Olfactory",
+    "2": "Kinaesthetic",
+    "3": "Visual",
+    "4": "Gustatory",
+    "5": "Auditory",
+    "6": "Olfactory",
+    "7": "Kinaesthetic",
+    "8": "Visual",
+    "9": "Gustatory"
+  },
+  "3NLP": {
+    "1": "Kinasthetic",
+    "2": "Gustatory",
+    "3": "Audotory",
+    "4": "Visual",
+    "5": "Olfactory",
+    "6": "Kinaesthetic",
+    "7": "Gustatory",
+    "8": "Auditory",
+    "9": "Visual"
+  },
+  "4NLP": {
+    "1": "Gustatory",
+    "2": "Visual",
+    "3": "Olfactory",
+    "4": "Auditory",
+    "5": "Kinaesthetic",
+    "6": "Gustatory",
+    "7": "Visual",
+    "8": "Olfactory",
+    "9": "Auditory"
+  },
+  "5NLP": {
+    "1": "Auditory",
+    "2": "Olfactory",
+    "3": "Gustatory",
+    "4": "Kinaesthetic",
+    "5": "Visual",
+    "6": "Auditory",
+    "7": "Olfactory",
+    "8": "Gustatory",
+    "9": "Kinaesthetic"
+  },
+  "1DISC": {
+    "1": "(C) Conscientious Compliance",
+    "2": "(S) Social Operational",
+    "3": "(I) Influential Interpersonal",
+    "4": "(S) Steady Steadfast",
+    "5": "(D) Dominant",
+    "6": "(C) Conscientious Compliance",
+    "7": "(S) Social Operational",
+    "8": "(I) Influential Interpersonal",
+    "9": "(S) Steady Steadfast"
+  },
+  "2DISC": {
+    "1": "(S) Steady Steadfast",
+    "2": "(I) Influential Interpersonal",
+    "3": "(C) Conscientious Compliance",
+    "4": "(D) Dominant",
+    "5": "(S) Social Operational",
+    "6": "(S) Steady Steadfast",
+    "7": "(I) Influential Interpersonal",
+    "8": "(C) Conscientious Compliance",
+    "9": "(D) Dominant"
+  },
+  "3DISC": {
+    "1": "(I) Influential Interpersonal",
+    "2": "(D) Dominant",
+    "3": "(S) Social Operational",
+    "4": "(C) Conscientious Compliance",
+    "5": "(S) Steady Steadfast",
+    "6": "(I) Influential Interpersonal",
+    "7": "(D) Dominant",
+    "8": "(S) Social Operational",
+    "9": "(C) Conscientious Compliance"
+  },
+  "4DISC": {
+    "1": "(D) Dominant",
+    "2": "(C) Conscientious Compliance",
+    "3": "(S) Steady Steadfast",
+    "4": "(S) Social Operational",
+    "5": "(I) Influential Interpersonal",
+    "6": "(D) Dominant",
+    "7": "(C) Conscientious Compliance",
+    "8": "(S) Steady Steadfast",
+    "9": "(S) Social Operational"
+  },
+  "5DISC": {
+    "1": "(S) Social Operational",
+    "2": "(S) Steady Steadfast",
+    "3": "(D) Dominant",
+    "4": "(I) Influential Interpersonal",
+    "5": "(C) Conscientious Compliance",
+    "6": "(S) Social Operational",
+    "7": "(S) Steady Steadfast",
+    "8": "(D) Dominant",
+    "9": "(I) Influential Interpersonal"
+  },
+  "1EQ": {
+    "1": "Self Management",
+    "2": "Self Motivation",
+    "3": "Relationship Management",
+    "4": "Self Awareness",
+    "5": "Social Awareness",
+    "6": "Self Management",
+    "7": "Self Motivation",
+    "8": "Relationship Management",
+    "9": "Self Awareness"
+  },
+  "2EQ": {
+    "1": "Self Awareness",
+    "2": "Relationship Management",
+    "3": "Self Management",
+    "4": "Social Awareness",
+    "5": "Self Motivation",
+    "6": "Self Awareness",
+    "7": "Relationship Management",
+    "8": "Self Management",
+    "9": "Social Awareness"
+  },
+  "3EQ": {
+    "1": "Relationship Management",
+    "2": "Social Awareness",
+    "3": "Self Motivation",
+    "4": "Self Management",
+    "5": "Self Awareness",
+    "6": "Relationship Management",
+    "7": "Social Awareness",
+    "8": "Self Motivation",
+    "9": "Self Management"
+  },
+  "4EQ": {
+    "1": "Social Awareness",
+    "2": "Self Management",
+    "3": "Self Awareness",
+    "4": "Self Motivation",
+    "5": "Relationship Management",
+    "6": "Social Awareness",
+    "7": "Self Management",
+    "8": "Self Awareness",
+    "9": "Self Motivation"
+  },
+  "5EQ": {
+    "1": "Self Motivation",
+    "2": "Self Awareness",
+    "3": "Social Awareness",
+    "4": "Relationship Management",
+    "5": "Self Management",
+    "6": "Self Motivation",
+    "7": "Self Awareness",
+    "8": "Social Awareness",
+    "9": "Relationship Management"
+  },
+  "UC info 1": {
+    "English": {
+      "1": "Research Based, Kinaesthetic and Influential Innovator",
+      "2": "Diplomatic, Gustatory and Dominant Communicator",
+      "3": "Action Oriented, Auditory and Operational Taskmaster",
+      "4": "Strategic, Visual and Compliant Administrator",
+      "5": "Principled, Olfactory and Steady Developer",
+      "6": "Righteous, Kinaesthetic and Influential Protector",
+      "7": "Problem-Solving, Gustatory and Dominant Entrepreneur",
+      "8": "Disciplinarian, Auditory and Operational Taskmaster",
+      "9": "Business-minded, Visual and Compliance Creator"
+    },
+    "Malay": {
+      "1": "Berdasarkan penyelidikan, Kinaestetik (Indera peraba) dan Pengaruh Pembaharuan",
+      "2": "Diplomatik, Gusti (Indra perasa), Dominan Komunikator",
+      "3": "Tindakan Orientasi, Auditori (Indera pendengaran) dan Operasi Guru tugas ",
+      "4": "Strategik",
+      "5": "Berprinsip, Olfactory (Indera Penciuman) dan Pemaju yang mantap",
+      "6": "Kebenaran yang adil, Kinaestetik (Indera peraba) dan Pengaruh Pembaharuan",
+      "7": "Menyelesaikan masalah, Gusti (Indra perasa), Usahawan yang dominan",
+      "8": "Tatatertib, Auditori (Indera pendengaran) dan Operasi Guru tugas",
+      "9": "Berfikiran Perniagaan, Visual (Indera Penglihatan), Pencipta pematuhan"
+    },
+    "Chinese":{
+      "1": "有研究能力、属于触觉感官和影响力的创新者",
+      "2": "有社交能力、属于味觉和支配型的谈判者",
+      "3": "有行动能力、属于听觉和操作型的乐观者",
+      "4": "有战略能力、属于视觉和服从型的策划者",
+      "5": "具有原则、属于嗅觉和稳定型开发者",
+      "6": "有正义感、属于触觉和影响力的保护者",
+      "7": "有解决能力、属于味觉和支配型的企业家",
+      "8": "有自律能力、属于听觉和操作型的责任者",
+      "9": "有商业头脑、属于视觉和服从型的创造者"
+    }
+  },
+  "UC info 2": {
+    "English": {
+      "1": "Whatever you want to do, you will usually initiate and make the 1st move, just like Adam the first man, the first person always needs to innovate and research and lead whoever that comes after.",
+      "2": "To move forward with your plan, you must negotiate with others, sell your product etc, only when Eve appears there to communicate, as now the two people have someone to talk to.",
+      "3": "You like to move fast and be proactive to make your plan work, like to listen to the conversation, then carry out the task, as such, you need to be task-oriented, fast and aggressive in the things you do.",
+      "4": "You need to have a plan to carry out your intention, will have to see what is going on, then administrate the tasks, you then start a system, policy and infra-structure for people to follow.",
+      "5": "You need to execute your plans, and may face obstacles, have a good sense of direction, will look at the tasks and develop them to the next level, and must be principled and grounded in carrying out the work.",
+      "6": "You start to see wealth after implementation of your plans, you must take care of the welfare of the people working, boldly protect their interests and be in charge of the financial matters of the group.",
+      "7": "You need a network of people to help you grow your business, enter the picture and troubleshoot the possible problems the group might face, you can multitask, troubleshoot and solve problems. You are known as an entrepreneur.",
+      "8": "You are a disciplined, responsible, committed person, task oriented and can be in charge of the paperwork and projects. A hardworking workaholic who can go the extra mile to do things if necessary.",
+      "9": "You keep on creating new ideas/ strategies, your efforts finally pay off and you attain SUCCESS, the last person is the one who is business minded and creative, good in packaging, and combines many successful ideas into one viable idea."
+    },
+    "Malay": {
+      "1": "Anda adalah seseorang yang berterus terang dan pemimpin yang lahir secara semula jadi. Anda juga sangat berkarisma dan orang sekeliling akan tertarik kepada kamu. Keyakinan diri anda akan menjadi manfaat dan menolong anda berjaya dalam semua perkara dalam hidup. Pemikiran anda adalah idea yang kadangkala kelihatan istimewa dan berbeza kerana otak anda sentiasa aktif dan dengan mudah memikirkan idea inovatif.",
+      "2": "Anda adalah seseorang yang pandai meluahkan pemikiran dan idea dan mempunyai komunikasi dan kemahiran berunding yang kuat. Anda juga peka dan berwaspada pada potensi masalah menjadikan anda lebih berhati-hati dengan kata-kata. Anda kelihatan seseorang yang mesra dan baik hati tetapi sebenarnya seseorang yang berfikiran logic dan dapat melihat kedua-dua sisi cerita.",
+      "3": "Anda adalah seseorang yang baik hati. Anda juga proaktif, pandai, pantas dan anda boleh menyatakan diri anda dengan baik. Anda juga penuh dengan rasa ingin tahu tentang benda baru dan juga seseorang yang sentiasa merasa bahagia. Anda ada bakat semula jadi, pendengar yang baik dan bergaul baik dengan orang lain. ",
+      "4": "Anda adalah seseorang yang pintar dan pragmatis dengan caramu. Anda juga ada keinginan yang kuat untuk pengetahuan. Anda bukan seorang yang gegabah dan anda fikirkan sesuatu perkara sebelum bertindak. Anda logic, pandai merancang dan lebih suka ikut peraturan. Kerana rasa tanggungjawab yang kuat, anda mematuhi undang-undang dan konservatif. Anda membuat pengurus yang baik.",
+      "5": "Anda adalah seseorang yang mempunyai prinsip yang kuat, arah akal yang jelas dan anda tidak suka terikat dengan peraturan. Seperti itu, anda mungkin kelihatan degil tetapi anda sebenarnya tidak suka membuat perkara yang berurutan tetap. Orang lain mungkin mengganggap anda seseorang yang stabil, mempunyai hubungan interpersonal yang baik dan seseorang yang menonjol dari orang lain. Anda juga setia dan berbakti.",
+      "6": "Anda adalah seseorang yang benar dan adil serta setia. Anda mempunyai nilai kekeluargaan yang kuat, rakan dan keluarga adalah segala-galanya buat anda. Tampan, sopan, baik hati dan boleh dipercayai. Anda adalah seseorang yang menjaga orang di sekeliling anda dengan baik. Anda bertanggungjawab dengan kewangan dan tahu melindungi asset anda dengan baik.",
+      "7": "Anda adalah seseorang yang bernasib baik dan tahu bagaimana memaksimumkan rangkainan anda untuk membantu anda berjaya. Anda tidak memerlukan masa yang lama untuk anda memberi perhatian dalam sesuatu perkara dan cenderung mendorong diri anda ke had sehingga anda dapat mencapai matlamat. Anda cepat belajar dan dapat menguasai kemahiran sukar dengan mudah. Kerana anda ada minda keusahawan yang kuat, anda cemerlang dalam menyelesaikan masalah dan mengatasi kesukaran.",
+      "8": "Anda mempunyai reputasi yang baik, kelihatan boleh dipercayai oleh orang lain dan berpengaruh. Anda mempunyai apa yang diperlukan untuk menjadi usahawan dan mata yang kuat untuk melihat potensi dalam sesuatu perkara. Anda selalu selangkah lebih maju dari yang lain. Kerana rasa tanggungjawab dan cita-cita tiggi anda kelihatan sukar/tegas kepada orang lain. Anda sangat mementingkan keadilan dan kesaksamaan dan akan menjadi seseorang dermawan yang hebat setelah menempuh kesusahan.",
+      "9": "Anda andalah seseorang yang berwawasan, kreatif, berimaginasi, bijak dan berbakat. Oleh itu anda hebat berfikir di luar kotak dan dapat menyesuaikan diri dengan pelbagai situasi. Namun anda cenderung pada sensitif dan beremosi. Anda akan beruntung dengan penyelia anda dan akan disukai oleh pihak pengurusan. Anda akan mempunyai lebih banyak peluang dibandingkan dengan yang lain."
+    },
+    "Chinese": {
+      "1": "你是一个直率、天生具有非凡的领导能力，有一种很独特的吸引力，让人很想亲近，所拥有的自信，也会帮助你在任何领域走向成功，不过你的想法有时会显得很特殊，脑子里经常转个不停，大多时候，都能成功地开发出新的想法，而让人惊叹。",
+      "2": "你是一个善于表达，沟通能力很强的人，并且具有良好的谈判技巧。个性敏感，对潜在的问题有警觉性，导致他们在开口之前会深思熟虑，而不是展示他们天生超快的语速。看起来是个温和亲切的人，事实上很有主见，能同时看到事情的正反两面和看清事务的本质。",
+      "3": "你是一个人心地善良，拥有极强行动力的人，机灵，反应快，表达能力好，对新鲜事物充满好奇，带有知足常乐的个性，而且往往天生就有珍贵的能力与才华，以及是个很好的聆听者，很愿意跟别人打成一片，在聚会时都能与人融洽相处。 ",
+      "4": "你是一个办事比较精明，求知欲望强烈，做事务实，常常对周围的事，思考得很周全，善于三思而后行，不鲁莽，并且以事实和逻辑为基础，善于策划，做事都会按部就班的执行，责任也心较强，是个天生的管理人才，也是个奉公守法和保守型的人。",
+      "5": "你是一个喜欢讲原则，方向感很强，讨厌被各种规则所拘束的人，固执的同时喜欢不按牌理出牌，做起事情来以随机应变的态度居多, 通常给人一种稳重的印象，人际关系蛮好，会在人群里面引起注意，也是个讲求义气和孝顺的人。",
+      "6": "你是一个有正义感和忠诚的人，对朋友多情重义，非常注重感情和家庭观念强，长得好看、彬彬有礼又富有同情心，做事循规蹈矩，值得信赖，而且温和谦虚。天生懂得照顾别人，对自己的个人财务和资产保护得非常好。",
+      "7": "你是一个幸运的人，懂得充分利用人脉网络来帮助你成功，严厉鞭策自己以达到所要的目标，只要专心一致，很容易进入状态而且表现得出类拔萃，通常能掌握高技能，而且一旦学习，很快就能上手，特别擅长于排除万难，具有创业精神，是个优秀杰出的问题解决者。",
+      "8": "你是一个拥有好名声，让人觉得值得信赖，同时具有影响力和企业家潜质的人，容易比别人早一步看透事物的潜力，有着高度的责任感和强烈的事业心，有时会表现得很强硬，拥有公平和正义的强烈意识，经过岁月磨炼后会是个大慈善家。",
+      "9": "你是一个洞察力强，富有创意和想象力丰富的人，善于把诸多概念放在一起，擅长重新包装以适应情况的需要。多才多艺，但比较敏感，略带神经质。非常有长辈缘, 通常会受到管理层的赏识而得到提拔。好的机遇比一般人较多。"
+    }
+  },
+  "UC info 3": {
+    "English": {
+      "1": "You tend to seek out social stimulation and opportunities to engage with others. In group situations, you are likely to be more physically expressive, talk often and assert yourself. You gain energy from engaging in social interaction, gain inspiration and excitement from talking and discussing ideas with others.",
+      "2": "You tend to seek out social stimulation and opportunities to engage with others. In group situations, you are likely to be more physically expressive, talk often and assert yourself. You gain energy from engaging in social interaction, gain inspiration and excitement from talking and discussing ideas with others.",
+      "3": "You tend to seek out social stimulation and opportunities to engage with others. In group situations, you are likely to be more physically expressive, talk often and assert yourself. You gain energy from engaging in social interaction, gain inspiration and excitement from talking and discussing ideas with others.",
+      "4": "You tend to seek out social stimulation and opportunities to engage with others. In group situations, you are likely to be more physically expressive, talk often and assert yourself. You gain energy from engaging in social interaction, gain inspiration and excitement from talking and discussing ideas with others.",
+      "5": "You have both introverted and extroverted traits, though neither trait is dominant. You have a more balanced personality. You are able to move between social or being solitary, speaking up or listening carefully with greater ease than either introverts or extroverts. You have a wider range of skills and can connect with a wider range of people. The drawback is that it can sometimes be difficult for you to know which side of your characteristics to lead in a given situation. Hence, you might get stuck, not knowing what energizes you and that you need to understand your approach to feel more motivated.",
+      "6": "You are inward turning, or focused more on internal thoughts, feelings and moods rather than seeking out external stimulation. You tend to be more quiet, reserved, and introspective. You expend energy in social situations; after attending a party or spending time in a large group of people, you feel a need to “recharge” by spending a period of time alone.",
+      "7": "You are inward turning, or focused more on internal thoughts, feelings and moods rather than seeking out external stimulation. You tend to be more quiet, reserved, and introspective. You expend energy in social situations; after attending a party or spending time in a large group of people, you feel a need to “recharge” by spending a period of time alone.",
+      "8": "You are inward turning, or focused more on internal thoughts, feelings and moods rather than seeking out external stimulation. You tend to be more quiet, reserved, and introspective. You expend energy in social situations; after attending a party or spending time in a large group of people, you feel a need to “recharge” by spending a period of time alone.",
+      "9": "You are inward turning, or focused more on internal thoughts, feelings and moods rather than seeking out external stimulation. You tend to be more quiet, reserved, and introspective. You expend energy in social situations; after attending a party or spending time in a large group of people, you feel a need to “recharge” by spending a period of time alone."
+    },
+    "Malay": {
+      "1": "Anda adalah ekstrovert dan gemar berinteraksi dengan yang lain. Anda berkembang maju dalam situasi sosial dan boleh didekati dan senang bercakap walaupun dalam suasana kumpulan. Orang merasa selesa dan bahagia bercakap dengan anda. Anda merasakan energi terisi semasa dikelilingi oleh orang ramai dan memelukan kontak bersemuka. Anda cenderung merasakan kesunyian dan sedih sekiranya anda bersendirian untuk jangka masa yang panjang.",
+      "2": "Anda adalah ekstrovert dan gemar berinteraksi dengan yang lain. Anda berkembang maju dalam situasi sosial dan boleh didekati dan senang bercakap walaupun dalam suasana kumpulan. Orang merasa selesa dan bahagia bercakap dengan anda. Anda merasakan energi terisi semasa dikelilingi oleh orang ramai dan memelukan kontak bersemuka. Anda cenderung merasakan kesunyian dan sedih sekiranya anda bersendirian untuk jangka masa yang panjang.",
+      "3": "Anda adalah ekstrovert dan gemar berinteraksi dengan yang lain. Anda berkembang maju dalam situasi sosial dan boleh didekati dan senang bercakap walaupun dalam suasana kumpulan. Orang merasa selesa dan bahagia bercakap dengan anda. Anda merasakan energi terisi semasa dikelilingi oleh orang ramai dan memelukan kontak bersemuka. Anda cenderung merasakan kesunyian dan sedih sekiranya anda bersendirian untuk jangka masa yang panjang.",
+      "4": "Anda adalah ekstrovert dan gemar berinteraksi dengan yang lain. Anda berkembang maju dalam situasi sosial dan boleh didekati dan senang bercakap walaupun dalam suasana kumpulan. Orang merasa selesa dan bahagia bercakap dengan anda. Anda merasakan energi terisi semasa dikelilingi oleh orang ramai dan memelukan kontak bersemuka. Anda cenderung merasakan kesunyian dan sedih sekiranya anda bersendirian untuk jangka masa yang panjang.",
+      "5": "Anda adalah ambivert. Jika dibandingkan dengan introvert atau ekstrovert yang lain, anda boleh beralih antara selesa bersosial dengan yang lain atau bersendirian. Keperibadian anda terletak di tengah-tengah spektrum. Oleh itu, anda selesa bergaul dengan rakan-rakan atau mengambil bahagian dalam tugasan yang memerlukan penyertaan kumpulan tetapi anda juga merasakan tenang walaupun anda bersendirian. Anda mempunyai pelbagai kemahiran dan dapat berhubung dengan pelbagai orang. Kelemahan anda adalah kadang-kadang sukar bagi anda untuk mengetahui ciri-ciri anda yang manakah untuk memimpin dalam situasi tertentu. Oleh itu, anda mungkin buntu tidak mengetahui apa yang memberi anda kesan tenaga dan memahami pendekatan yang diperlukan untuk merasakan lebih bermotivasi.",
+      "6": "Anda adakah seorang yang introvert. Anda sangat mementingkan ketenangan dalaman dan anda menyukai ketenangan sekeliling. Anda rasa dicas bila keseorangan atau bersama orang yang anda percayai. Namun anda merasa sukar/penat untuk berada di sekitaran orang yang anda tidak kenali atau berada dalam persekitaran sosial yang besar terutama apabila terdedah untuk jangka masa yang panjang. Anda mungkin memerlukan satu atau dua hari untuk bersendirian dan mencas tenaga yang hilang.",
+      "7": "Anda adakah seorang yang introvert. Anda sangat mementingkan ketenangan dalaman dan anda menyukai ketenangan sekeliling. Anda rasa dicas bila keseorangan atau bersama orang yang anda percayai. Namun anda merasa sukar/penat untuk berada di sekitaran orang yang anda tidak kenali atau berada dalam persekitaran sosial yang besar terutama apabila terdedah untuk jangka masa yang panjang. Anda mungkin memerlukan satu atau dua hari untuk bersendirian dan mencas tenaga yang hilang.",
+      "8": "Anda adakah seorang yang introvert. Anda sangat mementingkan ketenangan dalaman dan anda menyukai ketenangan sekeliling. Anda rasa dicas bila keseorangan atau bersama orang yang anda percayai. Namun anda merasa sukar/penat untuk berada di sekitaran orang yang anda tidak kenali atau berada dalam persekitaran sosial yang besar terutama apabila terdedah untuk jangka masa yang panjang. Anda mungkin memerlukan satu atau dua hari untuk bersendirian dan mencas tenaga yang hilang.",
+      "9": "Idealis dipahami selalu mencari makna hidup dan kehidupan. Anda mempercayai kuat pada kejujuran dan integriti antara sesama manusia, cenderung menonjolkan sifat positif kepada orang lain. Anda suka menolong orang lain berkembang maju dan menjadi matang. Idealis suka membuat pelaburan harta tanah pada jangka panjang dan stabil. Dan lebih suka tidak memindah rumah secara kerap. Anda mungkin akan mempunyai insurans hayat dan menjadi orang yang merancang lebih awal."
+    },
+    "Chinese":{
+      "1": "你是属于外向的，喜欢与他人打交道，活跃于社交场所，在群体中， 很活泼健谈，可以轻易与人谈笑风声，通过与很多人在一起时，面对面交流而处于充电状态，反之，如果独处时间越久，会倍感难受。",
+      "2": "你是属于外向的，喜欢与他人打交道，活跃于社交场所，在群体中， 很活泼健谈，可以轻易与人谈笑风声，通过与很多人在一起时，面对面交流而处于充电状态，反之，如果独处时间越久，会倍感难受。",
+      "3": "S你是属于外向的，喜欢与他人打交道，活跃于社交场所，在群体中， 很活泼健谈，可以轻易与人谈笑风声，通过与很多人在一起时，面对面交流而处于充电状态，反之，如果独处时间越久，会倍感难受。",
+      "4": "你是属于外向的，喜欢与他人打交道，活跃于社交场所，在群体中， 很活泼健谈，可以轻易与人谈笑风声，通过与很多人在一起时，面对面交流而处于充电状态，反之，如果独处时间越久，会倍感难受。",
+      "5": "你同时具有内向和外向的特征，既不外向也不内向。与内向或外向的人相比，你可以更轻松地在社交或独处之间切换，你不排斥，甚至喜欢与朋友一起聚餐交流、参与需要团体合作的任务，并且从中获得能量，同时也能在自处时感到自在。",
+      "6": "你是属于内向的，在乎自己的内心世界，喜欢安静，通过独处或和信任的朋友交流时而处于充电状态，不喜欢陌生人很多，过于热闹的社交场合会感觉处在耗电状态，时间越长越难受，可能需要一两天独处来恢复消耗掉的精力。",
+      "7": "你是属于内向的，在乎自己的内心世界，喜欢安静，通过独处或和信任的朋友交流时而处于充电状态，不喜欢陌生人很多，过于热闹的社交场合会感觉处在耗电状态，时间越长越难受，可能需要一两天独处来恢复消耗掉的精力。",
+      "8": "你是属于内向的，在乎自己的内心世界，喜欢安静，通过独处或和信任的朋友交流时而处于充电状态，不喜欢陌生人很多，过于热闹的社交场合会感觉处在耗电状态，时间越长越难受，可能需要一两天独处来恢复消耗掉的精力。",
+      "9": "你是属于内向的，在乎自己的内心世界，喜欢安静，通过独处或和信任的朋友交流时而处于充电状态，不喜欢陌生人很多，过于热闹的社交场合会感觉处在耗电状态，时间越长越难受，可能需要一两天独处来恢复消耗掉的精力。"
+    }
+  },
+  "UC info 4": {
+    "English": {
+      "1": "You are visionary and imaginary, and envision an ideal world rather than the real one. You strive for perfection to make the world a better place. You tend to pursue higher purposes and goals, though others view you to be impractical and out of touch with reality. You are a person with many ideas.",
+      "2": "You are organised, structured, practical and goal-oriented. You are straight-forward and rely on facts and logic. You act in response to particular situations rather than upon abstract ideals and fixed theories. On the down side, you can be inflexible, rigid and dogmatic. To you seeing is believing.",
+      "3": "You prefer to rely on facts and past events, rather than hopeful feelings and wishes to predict the future. You communicate realism rather than visionary thoughts. You love the best of both worlds. ",
+      "4": "You are visionary and imaginary, and envision an ideal world rather than the real one. You strive for perfection to make the world a better place. You tend to pursue higher purposes and goals, though others view you to be impractical and out of touch with reality. You are a person with many ideas.",
+      "5": "You are organised, structured, practical and goal-oriented. You are straight-forward and rely on facts and logic. You act in response to particular situations rather than upon abstract ideals and fixed theories. On the down side, you can be inflexible, rigid and dogmatic. To you seeing is believing.",
+      "6": "You prefer to rely on facts and past events, rather than hopeful feelings and wishes to predict the future. You communicate realism rather than visionary thoughts. You love the best of both worlds. ",
+      "7": "You are visionary and imaginary, and envision an ideal world rather than the real one. You strive for perfection to make the world a better place. You tend to pursue higher purposes and goals, though others view you to be impractical and out of touch with reality. You are a person with many ideas.",
+      "8": "You are organised, structured, practical and goal-oriented. You are straight-forward and rely on facts and logic. You act in response to particular situations rather than upon abstract ideals and fixed theories. On the down side, you can be inflexible, rigid and dogmatic. To you seeing is believing.",
+      "9": "You prefer to rely on facts and past events, rather than hopeful feelings and wishes to predict the future. You communicate realism rather than visionary thoughts. You love the best of both worlds. "
+    },
+    "Malay": {
+      "1": "Idealis dipahami selalu mencari makna hidup dan kehidupan. Anda mempercayai kuat pada kejujuran dan integriti antara sesama manusia, cenderung menonjolkan sifat positif kepada orang lain. Anda suka menolong orang lain berkembang maju dan menjadi matang. Idealis suka membuat pelaburan harta tanah pada jangka panjang dan stabil. Dan lebih suka tidak memindah rumah secara kerap. Anda mungkin akan mempunyai insurans hayat dan menjadi orang yang merancang lebih awal.",
+      "2": "Pragmatis bimbang sama ada tindakan mereka akan membawa hasil praktikal dan berfaedah.  Anda hanya menjaga kebenaran dan mengabaikan sesiapa sahaja yang tidak berguna pada anda. Anda cenderung untuk membeli harta tanah untuk tujuan pelaburan dan memperolehi pendapatan sewa. Anda juga akan mengambil insurans simpanan jangka pendek. Anda adalah seseorang yang mesti melihat bukti dahulu untuk percaya.",
+      "3": "Realis memandang kehidupan sebagai realiti. Anda percaya selagi seseorang dapat mencapai tujuan akhir anda, prosesnya tidak perlu sempurna dan anda tidak perlu memberi kesan yang besar. Realis mungkin berminat dengan harta dan saham. Anda lebih suka mengambil insurans simpanan jangka pendek dengan tujuan akhir untuk memiliki harta. Realis mahukan yang terbaik dari dua dunia.",
+      "4": "Idealis dipahami selalu mencari makna hidup dan kehidupan. Anda mempercayai kuat pada kejujuran dan integriti antara sesama manusia, cenderung menonjolkan sifat positif kepada orang lain. Anda suka menolong orang lain berkembang maju dan menjadi matang. Idealis suka membuat pelaburan harta tanah pada jangka panjang dan stabil. Dan lebih suka tidak memindah rumah secara kerap. Anda mungkin akan mempunyai insurans hayat dan menjadi orang yang merancang lebih awal.",
+      "5": "Pragmatis bimbang sama ada tindakan mereka akan membawa hasil praktikal dan berfaedah.  Anda hanya menjaga kebenaran dan mengabaikan sesiapa sahaja yang tidak berguna pada anda. Anda cenderung untuk membeli harta tanah untuk tujuan pelaburan dan memperolehi pendapatan sewa. Anda juga akan mengambil insurans simpanan jangka pendek. Anda adalah seseorang yang mesti melihat bukti dahulu untuk percaya.",
+      "6": "Realis memandang kehidupan sebagai realiti. Anda percaya selagi seseorang dapat mencapai tujuan akhir anda, prosesnya tidak perlu sempurna dan anda tidak perlu memberi kesan yang besar. Realis mungkin berminat dengan harta dan saham. Anda lebih suka mengambil insurans simpanan jangka pendek dengan tujuan akhir untuk memiliki harta. Realis mahukan yang terbaik dari dua dunia.",
+      "7": "Idealis dipahami selalu mencari makna hidup dan kehidupan. Anda mempercayai kuat pada kejujuran dan integriti antara sesama manusia, cenderung menonjolkan sifat positif kepada orang lain. Anda suka menolong orang lain berkembang maju dan menjadi matang. Idealis suka membuat pelaburan harta tanah pada jangka panjang dan stabil. Dan lebih suka tidak memindah rumah secara kerap. Anda mungkin akan mempunyai insurans hayat dan menjadi orang yang merancang lebih awal.",
+      "8": "Pragmatis bimbang sama ada tindakan mereka akan membawa hasil praktikal dan berfaedah.  Anda hanya menjaga kebenaran dan mengabaikan sesiapa sahaja yang tidak berguna pada anda. Anda cenderung untuk membeli harta tanah untuk tujuan pelaburan dan memperolehi pendapatan sewa. Anda juga akan mengambil insurans simpanan jangka pendek. Anda adalah seseorang yang mesti melihat bukti dahulu untuk percaya.",
+      "9": "Realis memandang kehidupan sebagai realiti. Anda percaya selagi seseorang dapat mencapai tujuan akhir anda, prosesnya tidak perlu sempurna dan anda tidak perlu memberi kesan yang besar. Realis mungkin berminat dengan harta dan saham. Anda lebih suka mengambil insurans simpanan jangka pendek dengan tujuan akhir untuk memiliki harta. Realis mahukan yang terbaik dari dua dunia."
+    },
+    "Chinese":{
+    "1": "理想主义者好像永远在寻找生存的意义。你非常崇尚人与人之间和各种关系中的真实和正直，容易将别人理想化，本能地喜欢帮助别人成长和进步。偏好购买长期、稳定的个人物业，不喜欢搬家，会投保人寿保险 。是个很有想法的人。",
+    "2": "实际主义者关注其行动是否能带来某种实际的效果，即直接的效用、利益，有用即是真理，无用即为谬误。偏好购买物业以投资为目的并获得租金收入，会投保短期储蓄保险。是个眼见为实的人。",
+    "3": "现实主义者认为生活是最实际的东西，就是现实中的一切，而做事情，只要结果能够达到，过程不需要完美，也不需要充满理想化。偏好购买物业以投资为目的，会投保短期储蓄保险，对投资房地产，股票有兴趣。是个想要两全其美的人。",
+    "4": "理想主义者好像永远在寻找生存的意义。你非常崇尚人与人之间和各种关系中的真实和正直，容易将别人理想化，本能地喜欢帮助别人成长和进步。偏好购买长期、稳定的个人物业，不喜欢搬家，会投保人寿保险 。是个很有想法的人。",
+    "5": "实际主义者关注其行动是否能带来某种实际的效果，即直接的效用、利益，有用即是真理，无用即为谬误。偏好购买物业以投资为目的并获得租金收入，会投保短期储蓄保险。是个眼见为实的人。",
+    "6": "现实主义者认为生活是最实际的东西，就是现实中的一切，而做事情，只要结果能够达到，过程不需要完美，也不需要充满理想化。偏好购买物业以投资为目的，会投保短期储蓄保险，对投资房地产，股票有兴趣。是个想要两全其美的人。",
+    "7": "理想主义者好像永远在寻找生存的意义。你非常崇尚人与人之间和各种关系中的真实和正直，容易将别人理想化，本能地喜欢帮助别人成长和进步。偏好购买长期、稳定的个人物业，不喜欢搬家，会投保人寿保险 。是个很有想法的人。",
+    "8": "实际主义者关注其行动是否能带来某种实际的效果，即直接的效用、利益，有用即是真理，无用即为谬误。偏好购买物业以投资为目的并获得租金收入，会投保短期储蓄保险。是个眼见为实的人。",
+    "9": "现实主义者认为生活是最实际的东西，就是现实中的一切，而做事情，只要结果能够达到，过程不需要完美，也不需要充满理想化。偏好购买物业以投资为目的，会投保短期储蓄保险，对投资房地产，股票有兴趣。是个想要两全其美的人。"
+    }
+  },
+  "R": {
+    "English": {
+      "1": "Characteristically Extrovert",
+      "2": "Characteristically Extrovert",
+      "3": "Characteristically Extrovert",
+      "4": "Characteristically Extrovert",
+      "5": "Characteristically Ambivert",
+      "6": "Characteristically Introvert",
+      "7": "Characteristically Introvert",
+      "8": "Characteristically Introvert",
+      "9": "Characteristically Introvert"
+    },
+    "Malay": {
+      "1": "Ciri-ciri Ekstrovert",
+      "2": "Ciri-ciri Ekstrovert",
+      "3": "Ciri-ciri Ekstrovert",
+      "4": "Ciri-ciri Ekstrovert",
+      "5": "Ciri-ciri Ambivert",
+      "6": "Ciri-ciri Introvert",
+      "7": "Ciri-ciri Introvert",
+      "8": "Ciri-ciri Introvert",
+      "9": "Ciri-ciri Introvert"
+    },
+    "Chinese":{
+      "1": "外向性格",
+      "2": "外向性格",
+      "3": "外向性格",
+      "4": "外向性格",
+      "5": "中向性格",
+      "6": "内向性格",
+      "7": "内向性格",
+      "8": "内向性格",
+      "9": "内向性格"
+    }
+  },
+  "Q": {
+    "English": {
+      "1": "Socially Extrovert",
+      "2": "Socially Extrovert",
+      "3": "Socially Extrovert",
+      "4": "Socially Extrovert",
+      "5": "Socially Ambivert",
+      "6": "Socially Introvert",
+      "7": "Socially Introvert",
+      "8": "Socially Introvert",
+      "9": "Socially Introvert"
+    },
+    "Malay": {
+      "1": "Ekstrovert secara Sosial",
+      "2": "Ekstrovert secara Sosial",
+      "3": "Ekstrovert secara Sosial",
+      "4": "Ekstrovert secara Sosial",
+      "5": "Ambivert secara Sosial",
+      "6": "Introvert secara Sosial",
+      "7": "Introvert secara Sosial",
+      "8": "Introvert secara Sosial",
+      "9": "Introvert secara Sosial"
+    },
+    "Chinese":{
+      "1": "外向社交型",
+      "2": "外向社交型",
+      "3": "外向社交型",
+      "4": "外向社交型",
+      "5": "中向社交型",
+      "6": "I内向社交型",
+      "7": "内向社交型",
+      "8": "内向社交型l",
+      "9": "内向社交型"
+    }
+  },
+  "Describe": {
+    "English": {
+      "1": "An Idealist",
+      "2": "A Pragmatist",
+      "3": "A Realist",
+      "4": "An Idealist",
+      "5": "A Pragmatist",
+      "6": "A Realist",
+      "7": "An Idealist",
+      "8": "A Pragmatist",
+      "9": "A Realist"
+    },
+    "Malay": {
+      "1": "Seseorang yang Idealist",
+      "2": "Seseorang yang Pragmatis",
+      "3": "Seseorang yang Realis",
+      "4": "Seseorang yang Idealist",
+      "5": "Seseorang yang Pragmatist",
+      "6": "Seseorang yang Realis",
+      "7": "Seseorang yang Idealis",
+      "8": "Seseorang yang Pragmatis",
+      "9": "Seseorang yang Realis"
+    },
+    "Chinese":{
+      "1": "理想主义者",
+      "2": "实际主义者",
+      "3": "现实主义者",
+      "4": "理想主义者",
+      "5": "实际主义者",
+      "6": "现实主义者",
+      "7": "理想主义者",
+      "8": "实际主义者",
+      "9": "现实主义者"
+    }
+  },
+  "profession": {
+    "English":{
+      "metal": "Accountant, Automotive Dealer, Bank Related, Electric Appliance, Exercise Equipment, Financial Institution, Financial Workforce, Government Office, Internet Security, Jewelry Dealer, Legal Profession, Machinery, Mechanical Engineering, Mining Minerals, Pawnshop, Police Enforcement, Politics, Science and Research Centre, Security Guard, Transportation",
+      "water": "Culture Show, Diplomat, Drink Vendor, Fisherman, Freelancer, Hawker, Insurance Agency, Internet Business, Magician, Maid Agency, Mathematician, Money Changer, Newscaster, Postman, Radio Station, Reporter, Salesman, Seafood Supplier, Service Base Business, Shipping Services, Trading Services, Travel Agency, Vehicle's Driver",
+      "fire": "Advertising, Air Freight, Branding, Canteen Operator, Chemical and Oil, Computer hardware, Cosmetic Products, Departmental Store, Fast Food, Fuel Related, Hot Drinks, Lighting, Magazine, Manpower Supply, Movie Maker, Nurse, Procurement with trading, Wholesaler",
+      "wood": "Artist, Author, Chinese Medicine, Design Studio, Doctor, Education, Fashion Designer, Forecasting, Furniture, Horticulture, Hospital, Human Culture, homeopathy, Interior designer, Library, Physiology, Pharmacy, Planting, Priest, Professor, Public Hygiene Officer, Publisher, Religion, Sawmill, Secretary (Admin), Teacher, Woodcraft",
+      "earth": "Accounting Business, Antique Shop, Architect, Charity, Church, Contractor, Feng Shui Master, Fortune-teller, Funeral, Gardener, Gemstone, hypnotherapy, Marble, Mining, Numerologist, Pottery, Psychology, Psychotherapy, Real Estate, Shares and Security Broker, Universal Human Profiling"
+  },
+  "Malay":{
+    "metal":"Akauntan, Peniaga Automotif, Perkerjaan berkaitan Bank, Perkakas Elektrik, Peralatan Senaman, Institusi Kewangan, Tenaga Kerja Kewangan, Pejabat Kerajaan, Pengawai Keselamatan Internet, Peniaga Barang kemas, Profesion Perundangan, Berkaitan Mesin, Kejuruteraan Mekanical, Mineral Perlombongan, Kedai Pajak Gadai, Penguatkuasaan Polis, Politik, Pusat Sains dan Penyelidikan, Pengawal Keselamatan, Pengangkutan",
+    "water":"Pertunjukan Budaya, Diplomat, Penjual Minuman, Nelayan, Pekerja Bebas, Penjaja, Agen Insurans, Peniagaan Internet, Ahli Silap Mata, Agensi Pembantu Rumah, Ahli Matematik, Pengurup Wang, Penyiar Berita, Posmen, Stesen Radio, Wartawan, Jurujual, Pembekal Makanan Laut, Perniagaan Asas Perkhidmatan, Perkhidmatan Penghantaran, Perkhidmatan Perdagangan, Agensi Pelancongan, Pemandu Kenderaan",
+    "fire":"Agensi Pengiklanan, Pengangkutan Udara, Penjenamaan, Pengusaha Kantin, Bahan Kimia dan Minyak, Perkakasan Komputer, Produk Kosmetik, Kedai Serbaneka, Makanan Segera, Berkaitan dengan Bahan Api, Minuman Panas, Pencahayaan, Majalah, Bekalan Tenaga Manusia, Pembuat Filem, Jururawat, Perolehan dengan Perdagangan, Pemborong",
+    "wood":"Artis, Pengarang, Perubatan Cina, Studio Reka Bentuk, Doktor, Pendidikan, Pereka Fesyen, Ramalan, Perabot, Hortikultur, Hospital, Budaya Manusia, Homeopati, Pereka Dalaman, Perpustakaan, Fisiologi, Farmasi, Menanam, Paderi, Guru Besar, Pengawai Kebersihan Awam, Penerbit, Agama, Kilang Papan, Setiausaha (Pentadbir), Cikgu, Kraf Kayu",
+    "earth":"Perniagaan Perakaunan, Kedai Antic, Arkitek, Pemacu Amal, Gereja, Kontraktor, Tuan Feng Shui, Penilik Nasib, Pengebumian, Tukang Kebun, Batu Permata, Hipnoterapi, Guli, Perlombongan, Ahli Numerologi, Tembikar, Psikologi, Psikoterapi, Hartanah, Broker Saham dan Keselamtan, Profil Manusia Sejagat"
+  },
+  "Chinese":{
+    "metal": "会计师、汽车经销商、银行部门、电器、健身器材、金融机构、政府部门、互联网安全、珠宝商、法律专业、机械、机械工程、矿业、典当行、警察、政治、科研 中心、保安、交通",
+    "water": "文化表演、外交官、酒水商、渔夫、自由职业者、小贩、保险代理、互联网业务、魔术师、女佣代理、数学家、货币兑换商、新闻广播员、邮递员、广播电台、记者、推销员、海鲜供应商、服务性质、航运服务 , 贸易服务, 旅行社, 司机",
+    "fire": "广告、空运、食堂经营、化工和石油、计算机硬件、化妆品、百货公司、快餐、燃料相关、热饮、灯、杂志、人力供应、电影制作、护士、贸易采购、批发商",
+    "wood": "艺术家、作家、医生、教育、时装设计师、家具、园艺、医院、人文、顺势疗法、室内设计师、图书馆、生理学、种植、牧师、公共卫生官员、出版商 , 宗教, 锯木厂, 文书, 教师",
+    "earth": "会计业务、古董店、建筑师、慈善机构、教堂、承包商、风水师、算命师、葬礼、园丁、宝石、催眠疗法、大理石、采矿、陶艺、心理学、心理治疗、房地产、股票和证券经纪人、 天性研究学分析师"
+  }
+      }
+}

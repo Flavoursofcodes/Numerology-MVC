@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <!-- <link rel="stylesheet" href="./stylesheets/application.css"> -->
+
+    
+  
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+          body {
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center; */
+            height: 100%;
+            background: linear-gradient(45deg, greenyellow, dodgerblue);
+            background-repeat: no-repeat;     
+          }
+        </style>
+  </head>
+  <body class="mx-auto" >
+    <div>
+      <nav class="navbar navbar-expand-md bg-light navbar-light">
+        <!-- Brand -->
+        <!-- <a class="navbar-brand" href="#">Welcome</a> -->
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active  m-2" href="/renderApplicationPage">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m-2  " href="/previousReports">Previous Reports</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+       
+          <a class="nav-link btn btn-danger m-2 float-right text-light" href="/logout">Logout</a>
+       
+      </nav>
+    </div>
+  <!-- <nav class="navbar navbar-light bg-light navbar-right navbar-expand-lg" style="
+  width: 300%;
+  height: 60px;
+  top: -450px;
+  left: -100px;
+  padding-right: 69px;
+  padding-left: 69px;
+">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link active" href="/renderApplicationPage">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/report/previousReports">Previous reports</a>
+      </li>
+    </ul>
+
+    <a class="btn btn-danger m-1 float-right" href="/logout">Logout</a>
+  </nav> -->
+  <% if(message.length>0) { %>
+    <div class="alert alert-danger " style = "text-align: center;" >  <%= message %></div>
+  
+    <% } %>
+  <div class="container" style="width: fit-content;margin:2% auto;background-color: #fff;">
+    <div class="row justify-content-center p-5">
+    <form class="form" action="/word/pdf/generate" method="POST" id="reportForm"> <!-- /report/freetrial -->
+      <div class="form-group">
+      <label class="Language" for="inputFirstName">Language</label>
+        <select name="lang" id="lang" required class="form-control">
+          <option value="English" selected >English</option>
+          <option value="Malay">Malay</option>
+          <option value="Chinese">中文</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="First_name" for="inputFirstName">First name</label>
+        <input name="name" type="text" class="form-control" id="firstname" placeholder="First name" required>
+      </div>
+      <div class="form-group">
+        <label class="Last_name" for="inputLastName">Last name</label>
+        <input name="lname" type="text" class="form-control" id="lastname" placeholder="Last name" required>
+      </div>
+      <div class="form-group">
+        <label class="Date_of_Birth" for="inputDob">Date of Birth</label>
+        <input type="text" name="dob" class="form-control" id="dob" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="DD-MM-YYYY" min="1000-01-01" max="2500-01-01" autocomplete="off"  required>
+        <div class="alert alert-warning d-none" role="alert" id="dobWarning">
+          Date format must be DD-MM-YYYY
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="Time_of_Birth" for="inputDob">Time of Birth</label>
+        <input type="time" name="timeofbirth" class="form-control" id="timeofbirth" placeholder="HH-MM" autocomplete="off"  required>
+        <div class="alert alert-warning d-none" role="alert" id="timeWarning">
+          Time format must be HH-MM in 24-hour notation.
+        </div>
+      </div>
+        <div class="form-group">
+        <label class="Gender" for="inputFirstName">Gender</label>
+        <select name="gender" id="gender" required>
+          <option class="select" value="" selected>select</option>
+          <option class="male" value="Male" >Male</option>
+          <option class="female" value="Female">Female</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="Twins_or_Triplets" for="inputFirstName">Twins or Triplets</label>
+        <select name="twinsOrTriplets" id="twinsOrTriplets" required>
+          <option class="select" value="" selected>select</option>
+          <option class="no" value="No" >No</option>
+          <option class="1st_twin" value="first_Twin">1st Twin</option>
+          <option class="2nd_twin" value="second_Twin">2nd Twin</option>
+          <option class="triplet" value="Triplet">Triplet</option>
+        </select>
+      </div>
+      <div class="form-group d-none" id="fdobContainer"> <!-- dont remove d-none class from here -->
+        <label class="Father_DOB" for="inputDob">Father DOB</label>
+        <input type="date" name="fdob" class="form-control " id="fdob" autocomplete="off" min="1000-01-01" max="2500-01-01" placeholder="DD-MM-YYYY">
+        <div class="alert alert-warning d-none" role="alert" id="fdobWarning">
+          Date format must be DD-MM-YYYY
+        </div>
+      </div>
+      <div class="form-group d-none" id="mdobContainer"> <!-- dont remove d-none class from here -->
+        <label class="Mother_DOB" for="inputDob">Mother DOB</label>
+        <input type="date" name="mdob" class="form-control  mdob"  id="mdob" autocomplete="off" min="1000-01-01" max="2500-01-01" placeholder="DD-MM-YYYY">
+        <div class="alert alert-warning d-none" role="alert" id="mdobWarning">
+          Date format must be DD-MM-YYYY
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="Email_Address" for="inputEmail">Email Address</label>
+        <input name="email" type="email" class="form-control" id="email" autocomplete="off" placeholder="Email Address" required>
+      </div>
+	  <div class="form-group">
+        <label class="Country" for="country">Country</label>
+        <select id="country" name="country" style="position:relative;top: 1px;" required>
+          <option class="Choose_Country" value="">Choose Country</option>
+          <option value="Afganistan">Afghanistan</option>
+          <option value="Albania">Albania</option>
+          <option value="Algeria">Algeria</option>
+          <option value="American Samoa">American Samoa</option>
+          <option value="Andorra">Andorra</option>
+          <option value="Angola">Angola</option>
+          <option value="Anguilla">Anguilla</option>
+          <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Armenia">Armenia</option>
+          <option value="Aruba">Aruba</option>
+          <option value="Australia">Australia</option>
+          <option value="Austria">Austria</option>
+          <option value="Azerbaijan">Azerbaijan</option>
+          <option value="Bahamas">Bahamas</option>
+          <option value="Bahrain">Bahrain</option>
+          <option value="Bangladesh">Bangladesh</option>
+          <option value="Barbados">Barbados</option>
+          <option value="Belarus">Belarus</option>
+          <option value="Belgium">Belgium</option>
+          <option value="Belize">Belize</option>
+          <option value="Benin">Benin</option>
+          <option value="Bermuda">Bermuda</option>
+          <option value="Bhutan">Bhutan</option>
+          <option value="Bolivia">Bolivia</option>
+          <option value="Bonaire">Bonaire</option>
+          <option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
+          <option value="Botswana">Botswana</option>
+          <option value="Brazil">Brazil</option>
+          <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
+          <option value="Brunei">Brunei</option>
+          <option value="Bulgaria">Bulgaria</option>
+          <option value="Burkina Faso">Burkina Faso</option>
+          <option value="Burundi">Burundi</option>
+          <option value="Cambodia">Cambodia</option>
+          <option value="Cameroon">Cameroon</option>
+          <option value="Canada">Canada</option>
+          <option value="Canary Islands">Canary Islands</option>
+          <option value="Cape Verde">Cape Verde</option>
+          <option value="Cayman Islands">Cayman Islands</option>
+          <option value="Central African Republic">Central African Republic</option>
+          <option value="Chad">Chad</option>
+          <option value="Channel Islands">Channel Islands</option>
+          <option value="Chile">Chile</option>
+          <option value="China">China</option>
+          <option value="Christmas Island">Christmas Island</option>
+          <option value="Cocos Island">Cocos Island</option>
+          <option value="Colombia">Colombia</option>
+          <option value="Comoros">Comoros</option>
+          <option value="Congo">Congo</option>
+          <option value="Cook Islands">Cook Islands</option>
+          <option value="Costa Rica">Costa Rica</option>
+          <option value="Cote DIvoire">Cote DIvoire</option>
+          <option value="Croatia">Croatia</option>
+          <option value="Cuba">Cuba</option>
+          <option value="Curaco">Curacao</option>
+          <option value="Cyprus">Cyprus</option>
+          <option value="Czech Republic">Czech Republic</option>
+          <option value="Denmark">Denmark</option>
+          <option value="Djibouti">Djibouti</option>
+          <option value="Dominica">Dominica</option>
+          <option value="Dominican Republic">Dominican Republic</option>
+          <option value="East Timor">East Timor</option>
+          <option value="Ecuador">Ecuador</option>
+          <option value="Egypt">Egypt</option>
+          <option value="El Salvador">El Salvador</option>
+          <option value="Equatorial Guinea">Equatorial Guinea</option>
+          <option value="Eritrea">Eritrea</option>
+          <option value="Estonia">Estonia</option>
+          <option value="Ethiopia">Ethiopia</option>
+          <option value="Falkland Islands">Falkland Islands</option>
+          <option value="Faroe Islands">Faroe Islands</option>
+          <option value="Fiji">Fiji</option>
+          <option value="Finland">Finland</option>
+          <option value="France">France</option>
+          <option value="French Guiana">French Guiana</option>
+          <option value="French Polynesia">French Polynesia</option>
+          <option value="French Southern Ter">French Southern Ter</option>
+          <option value="Gabon">Gabon</option>
+          <option value="Gambia">Gambia</option>
+          <option value="Georgia">Georgia</option>
+          <option value="Germany">Germany</option>
+          <option value="Ghana">Ghana</option>
+          <option value="Gibraltar">Gibraltar</option>
+          <option value="Great Britain">Great Britain</option>
+          <option value="Greece">Greece</option>
+          <option value="Greenland">Greenland</option>
+          <option value="Grenada">Grenada</option>
+          <option value="Guadeloupe">Guadeloupe</option>
+          <option value="Guam">Guam</option>
+          <option value="Guatemala">Guatemala</option>
+          <option value="Guinea">Guinea</option>
+          <option value="Guyana">Guyana</option>
+          <option value="Haiti">Haiti</option>
+          <option value="Hawaii">Hawaii</option>
+          <option value="Honduras">Honduras</option>
+          <option value="Hong Kong">Hong Kong</option>
+          <option value="Hungary">Hungary</option>
+          <option value="Iceland">Iceland</option>
+          <option value="Indonesia">Indonesia</option>
+          <option value="India">India</option>
+          <option value="Iran">Iran</option>
+          <option value="Iraq">Iraq</option>
+          <option value="Ireland">Ireland</option>
+          <option value="Isle of Man">Isle of Man</option>
+          <option value="Israel">Israel</option>
+          <option value="Italy">Italy</option>
+          <option value="Jamaica">Jamaica</option>
+          <option value="Japan">Japan</option>
+          <option value="Jordan">Jordan</option>
+          <option value="Kazakhstan">Kazakhstan</option>
+          <option value="Kenya">Kenya</option>
+          <option value="Kiribati">Kiribati</option>
+          <option value="Korea North">Korea North</option>
+          <option value="Korea Sout">Korea South</option>
+          <option value="Kuwait">Kuwait</option>
+          <option value="Kyrgyzstan">Kyrgyzstan</option>
+          <option value="Laos">Laos</option>
+          <option value="Latvia">Latvia</option>
+          <option value="Lebanon">Lebanon</option>
+          <option value="Lesotho">Lesotho</option>
+          <option value="Liberia">Liberia</option>
+          <option value="Libya">Libya</option>
+          <option value="Liechtenstein">Liechtenstein</option>
+          <option value="Lithuania">Lithuania</option>
+          <option value="Luxembourg">Luxembourg</option>
+          <option value="Macau">Macau</option>
+          <option value="Macedonia">Macedonia</option>
+          <option value="Madagascar">Madagascar</option>
+          <option value="Malaysia">Malaysia</option>
+          <option value="Malawi">Malawi</option>
+          <option value="Maldives">Maldives</option>
+          <option value="Mali">Mali</option>
+          <option value="Malta">Malta</option>
+          <option value="Marshall Islands">Marshall Islands</option>
+          <option value="Martinique">Martinique</option>
+          <option value="Mauritania">Mauritania</option>
+          <option value="Mauritius">Mauritius</option>
+          <option value="Mayotte">Mayotte</option>
+          <option value="Mexico">Mexico</option>
+          <option value="Midway Islands">Midway Islands</option>
+          <option value="Moldova">Moldova</option>
+          <option value="Monaco">Monaco</option>
+          <option value="Mongolia">Mongolia</option>
+          <option value="Montserrat">Montserrat</option>
+          <option value="Morocco">Morocco</option>
+          <option value="Mozambique">Mozambique</option>
+          <option value="Myanmar">Myanmar</option>
+          <option value="Nambia">Nambia</option>
+          <option value="Nauru">Nauru</option>
+          <option value="Nepal">Nepal</option>
+          <option value="Netherland Antilles">Netherland Antilles</option>
+          <option value="Netherlands">Netherlands (Holland, Europe)</option>
+          <option value="Nevis">Nevis</option>
+          <option value="New Caledonia">New Caledonia</option>
+          <option value="New Zealand">New Zealand</option>
+          <option value="Nicaragua">Nicaragua</option>
+          <option value="Niger">Niger</option>
+          <option value="Nigeria">Nigeria</option>
+          <option value="Niue">Niue</option>
+          <option value="Norfolk Island">Norfolk Island</option>
+          <option value="Norway">Norway</option>
+          <option value="Oman">Oman</option>
+          <option value="Pakistan">Pakistan</option>
+          <option value="Palau Island">Palau Island</option>
+          <option value="Palestine">Palestine</option>
+          <option value="Panama">Panama</option>
+          <option value="Papua New Guinea">Papua New Guinea</option>
+          <option value="Paraguay">Paraguay</option>
+          <option value="Peru">Peru</option>
+          <option value="Phillipines">Philippines</option>
+          <option value="Pitcairn Island">Pitcairn Island</option>
+          <option value="Poland">Poland</option>
+          <option value="Portugal">Portugal</option>
+          <option value="Puerto Rico">Puerto Rico</option>
+          <option value="Qatar">Qatar</option>
+          <option value="Republic of Montenegro">Republic of Montenegro</option>
+          <option value="Republic of Serbia">Republic of Serbia</option>
+          <option value="Reunion">Reunion</option>
+          <option value="Romania">Romania</option>
+          <option value="Russia">Russia</option>
+          <option value="Rwanda">Rwanda</option>
+          <option value="St Barthelemy">St Barthelemy</option>
+          <option value="St Eustatius">St Eustatius</option>
+          <option value="St Helena">St Helena</option>
+          <option value="St Kitts-Nevis">St Kitts-Nevis</option>
+          <option value="St Lucia">St Lucia</option>
+          <option value="St Maarten">St Maarten</option>
+          <option value="St Pierre & Miquelon">St Pierre & Miquelon</option>
+          <option value="St Vincent & Grenadines">St Vincent & Grenadines</option>
+          <option value="Saipan">Saipan</option>
+          <option value="Samoa">Samoa</option>
+          <option value="Samoa American">Samoa American</option>
+          <option value="San Marino">San Marino</option>
+          <option value="Sao Tome & Principe">Sao Tome & Principe</option>
+          <option value="Saudi Arabia">Saudi Arabia</option>
+          <option value="Senegal">Senegal</option>
+          <option value="Seychelles">Seychelles</option>
+          <option value="Sierra Leone">Sierra Leone</option>
+          <option value="Singapore">Singapore</option>
+          <option value="Slovakia">Slovakia</option>
+          <option value="Slovenia">Slovenia</option>
+          <option value="Solomon Islands">Solomon Islands</option>
+          <option value="Somalia">Somalia</option>
+          <option value="South Africa">South Africa</option>
+          <option value="Spain">Spain</option>
+          <option value="Sri Lanka">Sri Lanka</option>
+          <option value="Sudan">Sudan</option>
+          <option value="Suriname">Suriname</option>
+          <option value="Swaziland">Swaziland</option>
+          <option value="Sweden">Sweden</option>
+          <option value="Switzerland">Switzerland</option>
+          <option value="Syria">Syria</option>
+          <option value="Tahiti">Tahiti</option>
+          <option value="Taiwan">Taiwan</option>
+          <option value="Tajikistan">Tajikistan</option>
+          <option value="Tanzania">Tanzania</option>
+          <option value="Thailand">Thailand</option>
+          <option value="Togo">Togo</option>
+          <option value="Tokelau">Tokelau</option>
+          <option value="Tonga">Tonga</option>
+          <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+          <option value="Tunisia">Tunisia</option>
+          <option value="Turkey">Turkey</option>
+          <option value="Turkmenistan">Turkmenistan</option>
+          <option value="Turks & Caicos Is">Turks & Caicos Is</option>
+          <option value="Tuvalu">Tuvalu</option>
+          <option value="Uganda">Uganda</option>
+          <option value="United Kingdom">United Kingdom</option>
+          <option value="Ukraine">Ukraine</option>
+          <option value="United Arab Erimates">United Arab Emirates</option>
+          <option value="United States of America">United States of America</option>
+          <option value="Uraguay">Uruguay</option>
+          <option value="Uzbekistan">Uzbekistan</option>
+          <option value="Vanuatu">Vanuatu</option>
+          <option value="Vatican City State">Vatican City State</option>
+          <option value="Venezuela">Venezuela</option>
+          <option value="Vietnam">Vietnam</option>
+          <option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
+          <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+          <option value="Wake Island">Wake Island</option>
+          <option value="Wallis & Futana Is">Wallis & Futana Is</option>
+          <option value="Yemen">Yemen</option>
+          <option value="Zaire">Zaire</option>
+          <option value="Zambia">Zambia</option>
+          <option value="Zimbabwe">Zimbabwe</option>
+       </select>
+       <div class="alert alert-warning d-none" role="alert" id="countryWarning">
+        Choose a country
+      </div>
+      </div>
+	  <div class="inputbox">
+          <button type="submit" class="submit_now btn btn-primary w-100" id="submitButton">Submit Now!</button>	  <!--  Keep it as button and not input field -->
+    
+    </div>
+      
+      <script>
+
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+
+      // function formValidation(){
+      //         let formValid = true;
+              // var dateString = document.getElementById("dob").value;
+              // var parts = dateString.split('-');
+              // $('#dobWarning').addClass('d-none');
+              // console.log(parts);
+              // if(dateString.length!=0 && (dateString.length!=10 || parseInt(parts[0]) > 31|| parseInt(parts[1]) > 12 || parts[0].length!=2 || parts[1].length !=2 || parts[2].length !=4))
+              // {
+              //   event.preventDefault();
+              //   event.stopPropagation();
+              //   //console.log('err date');
+              //   $('#dobWarning').removeClass('d-none');
+              //   $('#submitButton').prop('disabled',true);
+              //   formValid = false;
+              // }
+
+              // var dateString = document.getElementById("fdob").value;
+              // var parts = dateString.split('-');
+              // $('#fdobWarning').addClass('d-none');
+              // if(dateString.length!=0 && (dateString.length!=10 || parseInt(parts[0]) > 31|| parseInt(parts[1]) > 12 || parts[0].length!=2 || parts[1].length !=2 || parts[2].length !=4))
+              // {
+              //   event.preventDefault();
+              //   event.stopPropagation();
+              //   //console.log('err date');
+              //   $('#fdobWarning').removeClass('d-none');
+              //   $('#submitButton').prop('disabled',true);
+              //   formValid = false;
+               
+              // }
+
+              // var dateString = document.getElementById("mdob").value;
+              // var parts = dateString.split('-');
+              // $('#mdobWarning').addClass('d-none');
+              // if(dateString.length!=0 && (dateString.length!=10 || parseInt(parts[0]) > 31|| parseInt(parts[1]) > 12 || parts[0].length!=2 || parts[1].length !=2 || parts[2].length !=4))
+              // {
+              //   event.preventDefault();
+              //   event.stopPropagation();
+              //   //console.log('err date');
+              //   $('#mdobWarning').removeClass('d-none');
+              //   $('#submitButton').prop('disabled',true);
+              //   formValid = false;
+              
+              // }
+
+              // var timeString = document.getElementById("timeofbirth").value;
+              // var parts = timeString.split('-');
+              // console.log(parts);
+              // $('#timeWarning').addClass('d-none');
+              // if(timeString.length!=0 && (timeString.length!=5 || parseInt(parts[0]) > 23 || parseInt(parts[1]) > 59 || parts[0].length!=2 || parts[1].length !=2))
+              // {
+              //   event.preventDefault();
+              //   event.stopPropagation();
+              //   //console.log('err date');
+              //   $('#timeWarning').removeClass('d-none');
+              //   $('#submitButton').prop('disabled',true);
+              //   formValid = false;
+              // }
+
+              
+
+     //}
+      </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+
+
+          /* if my "reload" var isn't set locally.. getItem will be false */
+if (!localStorage.getItem("reload")) {
+    /* set reload to true and then reload the page */
+    localStorage.setItem("reload", "true");
+    location.reload();
+}
+/* after reloading remove "reload" from localStorage */
+else {
+    localStorage.removeItem("reload");
+    // localStorage.clear(); // or clear it, instead
+}
+
+            // $( "#dob" ).datepicker({changeMonth: true, changeYear: true, yearRange: "-100:+0", dateFormat: "dd-mm-yy"});
+            // $( "#fdob" ).datepicker({changeMonth: true, changeYear: true, yearRange: "-100:+0", dateFormat: "dd-mm-yy"});
+            // $( "#mdob" ).datepicker({changeMonth: true, changeYear: true, yearRange: "-100:+0", dateFormat: "dd-mm-yy"});
+
+            $('#twinsOrTriplets').change(function () {
+        var type = $('option:selected', this).val()
+        
+          // $('#fdob').removeAttr('required')
+          // $('#mdob').removeAttr('required')
+          // $("#fdobContainer").addClass("d-none");
+          // $("#mdobContainer").addClass("d-none");
+
+        console.log(type);
+        if (type == 'first_Twin') {
+          //$('#fdob').removeAttr('disabled')
+          $('#fdob').attr('required', true)
+          $('#mdob').removeAttr('required')
+          $("#fdobContainer").removeClass("d-none");
+          $("#mdobContainer").addClass("d-none");
+          //$('#mdob').attr('disabled', true)
+        } else if (type == 'second_Twin') {
+          $('#mdob').attr('required', true)
+          $('#fdob').removeAttr('required')
+          $("#mdobContainer").removeClass("d-none");
+          $("#fdobContainer").addClass("d-none");
+        } else if (type == 'Triplet') {
+          $('#fdob').attr('required', true)
+          $('#mdob').attr('required', true)
+          $("#fdobContainer").removeClass("d-none");
+          $("#mdobContainer").removeClass("d-none");
+        }
+        else if(type == "No"){
+          $('#fdob').removeAttr('required')
+          $('#mdob').removeAttr('required')
+          $("#fdobContainer").addClass("d-none");
+          $("#mdobContainer").addClass("d-none");
+        }
+
+      })
+
+
+      data={
+          'English':'{"no":"No","1st_twin":"1st twim","2nd_twin":"2nd twin","triplet":"triplet","male":"Male","female":"Female","First_name":"First name","Last_name":"Last name","Date_of_Birth":"Date of Birth","Time_of_Birth":"Time of Birth","Gender":"Gender","Twins_or_Triplets":"Twins or Triplets","Email_Address":"Email Address","Country":"Country","Language":"Language","submit_now":"submit now","Father_DOB":"Father DOB","Mother_DOB":"Mother DOB","Choose_Country":"Choose Country","select":"select"}',
+          'Malay':'{"no":"Bukan","1st_twin":"Kembar (anak) sulung","2nd_twin":"Kembar (anak) kedua","triplet":"Kembar tiga","male":"Lelaki","female":"Perempuan","First_name":"Nama Pertama","Last_name":"Nama Terakhir","Date_of_Birth":"Tarikh Lahir","Time_of_Birth":"Masa Lahir","Gender":"Jantina","Twins_or_Triplets":"Kembar atau Kembar Tiga","Email_Address":"Alamat Emel","Country":"Negara","Language":"Bahasa","submit_now":"Hantar Sekarang","Father_DOB":"Tarikh Lahir Bapa","Mother_DOB":"Tarikh Lahir Ibu","Choose_Country":"Pilih Negara","select":"Pilih"}',
+          '中文':'{"no":"不是","1st_twin":"第一胎","2nd_twin":"第二胎","triplet":"第三胎","male":"男性","female":"女性","First_name":"姓氏","Last_name":"名字","Date_of_Birth":"生日日期","Time_of_Birth":"出生时间","Gender":"性别","Twins_or_Triplets":"双胞胎或多胞胎","Email_Address":"电邮地址","Country":"国家","Language":"语文","submit_now":"马上提交","Father_DOB":"父亲出生","Mother_DOB":"生母","Choose_Country":"选择国家","select":"选择"}'
+        };
+
+       
+      $('#lang').change(function () {
+        var lang = $('option:selected', this).text()
+        console.log(lang);
+        // if (lang == 'Malay') {
+        // console.log(data[lang]);
+        keys = Object.keys(JSON.parse(data[lang]))
+        keys.forEach(element => {
+          // console.log('.'+element);
+          a = JSON.parse(data[lang])
+          // console.log(a[element]);
+          $(`.${element}`).text(a[element])
+        });
+      // }
+
+      if (lang=='English') {
+        $('#firstname').attr('placeholder','First Name');
+      $('#lastname').attr('placeholder','Last Name');
+      $('#dob,#mdob,#fdob').attr('placeholder','DD/MM/YYYY');
+      $('#email').attr('placeholder','Email');
+      }
+
+      else if (lang=='Malay') {
+        $('#firstname').attr('placeholder','Nama Pertama');
+      $('#lastname').attr('placeholder','Nama Terakhir');
+      $('#dob,#mdob,#fdob').attr('placeholder','HH/BB/TTTT');
+      $('#email').attr('placeholder','Alamat Emel');
+      }
+      else if (lang=='中文') {
+        $('#firstname').attr('placeholder',"姓氏");
+      $('#lastname').attr('placeholder',"名字");
+      $('#dob,#mdob,#fdob').attr('placeholder',"生日日期");
+      $('#email').attr('placeholder',"电邮地址");
+      }
+
+
+     
+
+
+
+      })
+          });
+    </script>
+    <script>
+
+    </script>
+   </body>
+</html>

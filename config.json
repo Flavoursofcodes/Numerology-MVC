@@ -1,0 +1,5 @@
+{
+    "connectionString": "mongodb+srv://shourya123:shourya123@ellipcluster.ar2u2.mongodb.net/numero1?retryWrites=true&w=majority",
+    "secret": "numeronodeapp"
+
+}

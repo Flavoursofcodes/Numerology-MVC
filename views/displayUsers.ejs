@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <style>
+      body {background: linear-gradient(45deg, greenyellow, dodgerblue);margin: 0;padding: 0;height:100%;background-repeat: no-repeat;}
+      h1   {color: blue;}
+      p    {color: red;}
+      .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
+          color: aliceblue;
+      }
+      @media (max-width:992px){
+        body{
+          background: linear-gradient(45deg, greenyellow, dodgerblue);
+          /* width: 100%; */
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          background-repeat: no-repeat;
+          overflow: scroll;
+        }
+      }
+    </style>
+  </head>
+  <body class="mx-auto">
+    <nav class="navbar navbar-light bg-light navbar-right navbar-expand-lg">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/renderAdminLandingPage">Home </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/users">Users <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/addUser">Add Users</a>
+        </li>
+      </ul>
+
+      <a class="btn btn-danger m-1 float-right" href="/logout">Logout</a>
+    </nav>
+    <div class="container" style="width: 60%; margin-top:2%;">
+        
+        <br>
+        <br>
+
+          <div class="table-md-responsive">
+          <table id="table_id" class="display">
+            <thead>
+              <tr style="background-color: #fff;">
+                <th scope="col">Username</th>
+                <th scope="col">Reports Generated</th>
+                <th scope="col">Delete</th>
+                <th scope="col">update</th>
+              </tr>
+            </thead>
+            <tbody>
+                <%
+                if(users.length!=0){
+                var i=1;
+                users.forEach(function(data){
+                %>
+                <tr>
+                    <td><%=data.username %></td>
+                    <td><%=data.filesGenerated %></td>
+                    <td><a href="/deleteUser/<%=data._id%>">Delete</a></td>
+                    <td><a href="/update/<%=data._id%>">update</a></td>
+                </tr>
+                <%  i++; }) %>
+                <% } else{ %>
+                    <tr>
+                        <td colspan="7">No Data Found</td>
+                    </tr>
+                <% } %>
+            </tbody>
+          </table> 
+          </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+    <script>
+  $(document).ready( function () {
+    $('#table_id').DataTable();
+} );
+</script>
+   </body>
+</html>
